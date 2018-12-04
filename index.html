@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link rel="image_src" href="grafika/facebook/sharedslika.jpg"/>
+
+<title>Televizija 90-tih</title>
+<link rel="shortcut icon" href="grafika/favicon.ico" type="image/x-icon" />
+<LINK href="css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<div id="videodiv">
+
+	<img id="tvpng" src="grafika/tvpng.png">
+
+
+	<img width="800" height="600" id="noise" src="">
+
+	<div id="playerContainer">
+		<div id="player"></div>
+	</div>
+
+
+		<div id="controlsDiv">
+
+			<div class="inputDivContainer">
+				<button type="button" id="filmoviButton" onclick="filmoviButton()">Filmovi</button><br>
+				<button type="button" id="serijeButton" onclick="serijeButton()">Serije</button><br>
+				<button type="button" id="crtaniFilmoviButton" onclick="crtaniFilmoviButton()">Crtani Filmovi</button><br>
+				<button type="button" id="muzikaButton" onclick="muzikaButton()">Muzika</button><br>
+				<button type="button" id="emisijeButton" onclick="emisijeButton()">Emisije</button><br>
+				<button type="button" id="sportButton" onclick="sportButton()">Sport</button><br>
+				<button type="button" id="reklameButton" onclick="reklameButton()">Reklame</button>
+			</div>
+
+			<input id="slider" type="range" min="1" max="100" step="1" value="50">
+
+			<button id="promeniKanal" onclick="promeniKanal()">Promeni Kanal<span style="font-size: 10pt; color:green"><p>mozete promeniti i pritiskom na space</p></span></button>
+
+			<button id="facebookDugme" onclick=" window.open('https://www.facebook.com/90te000webhostappcom/','_blank')">facebook</button>
+
+			<div id="tekstdiv">
+			<p id="brojKanala" style="color: #ffc300">Opis Kanala:</p>
+			<p id="title">Sacekajte trenutak</p>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+<script type="text/javascript" src="js/channels.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
